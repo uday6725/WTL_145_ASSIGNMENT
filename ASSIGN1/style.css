@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+
 header {
   background-color: #0d47a1;
   color: white;
@@ -38,7 +38,7 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* Main Content */
+
 .container {
   max-width: 1200px;
   margin: 30px auto;
@@ -52,7 +52,7 @@ nav a:hover {
   width: 100%;
 }
 
-/* Car List */
+
 .car-list {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +96,7 @@ nav a:hover {
   font-size: 0.95rem;
 }
 
-/* Contact Form */
+
 .contact-form {
   background: white;
   padding: 25px;
@@ -138,7 +138,7 @@ nav a:hover {
   background-color: #15c03d;
 }
 
-/* Footer */
+
 footer {
   background-color: #0d47a1;
   color: white;
@@ -147,7 +147,7 @@ footer {
   margin-top: 40px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   nav a {
     display: block;
