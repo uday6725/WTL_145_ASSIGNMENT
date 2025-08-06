@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>DOM Manipulation Tasks </h1>
+
+  <!-- Task 1 -->
+  <section>
+    <p id="text1">Original Text</p>
+    <button onclick="changeText()">Change Text</button>
+  </section>
+
+  <!-- Task 2 -->
+  <section>
+    <img id="myImage" src="https://via.placeholder.com/150" alt="Image">
+    <button onclick="updateImage()">Change Image</button>
+  </section>
+
+  <!-- Task 3 -->
+  <section>
+    <div id="colorBox">Color Box</div>
+    <button onclick="changeBackground()">Change Background</button>
+  </section>
+
+  <!-- Task 4 -->
+  <section>
+    <div id="toggleDiv">Toggle Me</div>
+    <button onclick="toggleDiv()">Show/Hide</button>
+  </section>
+
+  <!-- Task 5 -->
+  <section>
+    <ul id="myList"><li>Item 1</li></ul>
+    <button onclick="addListItem()">Add Item</button>
+  </section>
+
+  <!-- Task 6 -->
+  <section>
+    <p id="deleteMe">Delete this paragraph</p>
+    <button onclick="deleteElement()">Delete</button>
+  </section>
+
+  <!-- Task 7 -->
+  <section>
+    <p id="styledPara">Style Me</p>
+    <button onclick="addClass()">Add Class</button>
+  </section>
+
+  <!-- Task 8 -->
+  <section>
+    <input type="text" id="inputText" placeholder="Type something...">
+    <button onclick="showInput()">Show</button>
+    <div id="displayInput"></div>
+  </section>
+
+  <!-- Task 9 -->
+  <section>
+    <p id="resizeText">Resize Me</p>
+    <button onclick="increaseFont()">A+</button>
+    <button onclick="decreaseFont()">A-</button>
+  </section>
+
+  <!-- Task 10 -->
+  <section>
+    <textarea id="charArea" oninput="countChars()"></textarea>
+    <p>Characters: <span id="charCount">0</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
