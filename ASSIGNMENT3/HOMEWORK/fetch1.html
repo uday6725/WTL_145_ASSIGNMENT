@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Click me</button>
+    <div id="div"></div>
+
+    <script>
+    document.getElementById("btn1").addEventListener("click", () => {
+        let p = fetch("https://jsonplaceholder.typicode.com/todos");
+        p.then((res) => {
+            let r = res.json(); 
+            r.then(data => {
+                let out = "";
+                for (let i = 0; i < 10; i++) {
+                    out += "ID: " + data[i].id + "<br>" +
+                           "Title: " + data[i].title + "<br>" +
+                           "User ID: " + data[i].userId + "<br>" +
+                           "Completed: " + data[i].completed + "<br><br>";
+                }
+                document.getElementById("div").innerHTML = out;
+            });
+            r.catch(err => {
+                console.log(err);
+            });
+        });
+        p.catch(err => {
+            console.log(err);
+        });
+    });
+    </script>
+</body>
+</html>
